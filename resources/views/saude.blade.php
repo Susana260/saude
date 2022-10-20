@@ -14,7 +14,10 @@
         </div>
         <div>
             <form action="{{url('/imc')}}" method="get"> 
-                <label id="lnome" for=""
+                <label id="lnome" for="nome">Nome</label>
+                <input type="text" name="nome" placeholder="Informe seu nome">
+                <br>
+                </form>
         </div>
     </main>
     
