@@ -10,7 +10,7 @@
     <main>
         <div>
             <h1>Aplicação Saúde - Cálculo IMC</h1>
-            <p>Esta aplicação calcula o IMC<p>
+            <p>Esta aplicação calcula o IMC e o classifica.<p>
         </div>
         <div>
             <form action="{{url('/imc')}}" method="get"> 
