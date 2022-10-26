@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+/*use Illuminate\Http\Request;*/
 use App\Models\Saude;
 
 class SaudeController extends Controller
@@ -11,9 +11,9 @@ class SaudeController extends Controller
         return view('saude');
     }
 
-    public function imc($valores) {
-        $calculoimc = new Saude();
-        $resultadoimc = Saude.imc();
-        return view('imc', $resultadosimc);
+    public function imc() {
+        $saude = new Saude();
+        $resultadoimc = $saude->imc();
+        return view('imc',compact('resultadosimc'));
     }
 }
