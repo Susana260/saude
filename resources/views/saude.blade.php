@@ -21,10 +21,10 @@
                 <input type="text" name="datanascimento" placeholder="Informe sua Data de Nascimento">
                 <br>
                 <label id="lpeso" for="peso">Peso</label>
-                <input type="number" step="0.0" name="peso" placeholder="Informe seu peso">
+                <input type="number" step="0.01" name="peso" placeholder="Informe seu peso">
                 <br>
                 <label id="laltura" for="altura">Altura</label>
-                <input type="number" step="0.01" name="altura" placeholder="Informe seu altura">
+                <input type="number" name="altura" step="0.01" placeholder="Informe seu altura">
                 <br>
                 <button type="submit">Enviar</button>
                 </form>
