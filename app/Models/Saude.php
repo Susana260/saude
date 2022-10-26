@@ -10,9 +10,9 @@ class Saude extends Model
     use HasFactory;
 
     function caulcula_idade($nascimento) {
-        $nascimento=explode('/', $nascimento);
+        $nascimento=explode('-', $nascimento);
         $data=date('d/m/Y'); $data=explode('/',$data);
-        $anos=$data[2]-$nascimento[2];
+        $anos=$data[2]-$nascimento[0];
         if($nascimento[1] > $data[1]) return $anos-1;
         if($nascimento[1] == $data[1])
         {
