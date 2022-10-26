@@ -27,7 +27,7 @@ class Saude extends Model
     }
 
     function calcula_imc($peso, $altura) {
-        return ($peso / ($altura * $altura));
+        return round($peso / ($altura * $altura));
     }
 
     function classificacao_imc($imc) {
