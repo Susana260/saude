@@ -47,13 +47,13 @@ class Saude extends Model
     }
 
     public function imc() {
-        valores = [];
-        valores["nome"] = $_GET["nome"];
-        valores["idade"] = this.calcula_idade($_GET["datanascimento"]);
-        valores["peso"] = $_GET["peso"];
-        valores["altura"] = $_GET["altura"];
-        valores["imc"] = this.calcula_imc(valores["peso"],valores["altura"]);
-        valores["classificacaoimc"] = this.classificacao_imc(valores["imc"]);
+        $valores[] = "";
+        $valores["nome"] = $_GET["nome"];
+        $valores["idade"] = this.calcula_idade($_GET["datanascimento"]);
+        $valores["peso"] = $_GET["peso"];
+        $valores["altura"] = $_GET["altura"];
+        $valores["imc"] = this.calcula_imc($valores["peso"],$valores["altura"]);
+        $valores["classificacaoimc"] = this.classificacao_imc($valores["imc"]);
     }
     
 }
